@@ -2,7 +2,7 @@ function validateEmail(email) {
   // UC1 - Initial regex
   // UC2 - Ensure '@' and valid domain part (e.g., domain name)
   const pattern =
-    /^abc([._+-][a-z]+)?@[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})?$/;
+    /^abc([._+-][a-z]+)?@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
   return pattern.test(email);
 }
 
