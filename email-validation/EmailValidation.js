@@ -1,6 +1,8 @@
 function validateEmail(email) {
   // UC1 - Initial regex
   // UC2 - Ensure '@' and valid domain part (e.g., domain name)
+  // UC3 - Ensure '@', valid domain, mandatory '.' and third part
+  // UC4 - Optional part like xyz with valid special characters before it
   const pattern =
     /^abc([._+-][a-z]+)?@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
   return pattern.test(email);
